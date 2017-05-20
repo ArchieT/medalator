@@ -4,8 +4,3 @@
 
 (defn ocrad-run [pnm-path]
   (sh "sh" "-c" (str/join ["ocrad -i --scale=-1 " pnm-path])))
-
-(defn ocrad-out-process [what]
-  (-> what
-      str/split-lines
-      ))
